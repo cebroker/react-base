@@ -1,8 +1,10 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 const HelloWorld = () => {
   return (
-    <div>Say hello to the world from your first stateless component at <code>src/HelloWorld</code></div>
+    <div>
+      Say hello to the world from your first staless component at<code>src/HelloWorld</code>
+    </div>
   )
 }
 
