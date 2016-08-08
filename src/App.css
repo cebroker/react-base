@@ -16,6 +16,19 @@
 
 .App-intro {
   font-size: large;
+  width: 350px;
+  margin: 30px auto;
+}
+
+.App-nav {
+  padding: 0;
+  margin: 20px 0;
+  list-style-type: none;
+}
+
+.App-nav > li {
+  display: inline-block;
+  padding: 10px 20px;
 }
 
 @keyframes App-logo-spin {
