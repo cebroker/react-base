@@ -44,9 +44,13 @@
     "whatwg-fetch": "1.0.0"
   },
   "dependencies": {
+    "axios": "^0.13.1",
     "react": "^15.2.1",
     "react-dom": "^15.2.1",
-    "react-router": "^2.6.1"
+    "react-redux": "^4.4.5",
+    "react-router": "^2.6.1",
+    "redux": "^3.5.2",
+    "redux-promise": "^0.5.3"
   },
   "scripts": {
     "start": "node ./scripts/start.js",
