@@ -1,11 +1,11 @@
 import React from 'react';
 import { Grid, Row, Col, Panel, Button } from 'react-bootstrap';
-import './HelloBootstrap.css';
+import styles from './HelloBootstrap.css';
 
 const HelloBootstrap = () => {
   return (
-    <Grid className="HelloBootstrap">
-      <Row className="HelloBootstrap-intro">
+    <Grid className={styles.container}>
+      <Row className={styles.intro}>
         <Col sm={8} smOffset={2}>
         <h3>Hello Bootstrap</h3>
           <p>

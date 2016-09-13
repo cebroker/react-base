@@ -1,24 +1,23 @@
-.HelloApi {
+.container {
   margin: 30px auto;
   text-align: left;
 
-  &-list {
+  .list {
     padding: 0;
     margin: 20px 0;
     list-style-type: none;
 
-    > li {
+    > .item {
       display: block;
       padding: 15px 0;
-      //padding-right: 20px;
-      //float: left;
-      //width: 50%;
-    }
 
-    &-item-title {
-      font-size: 12px;
-      display: block;
-      color: #888;
+      .title {
+        font-size: 12px;
+        display: block;
+        color: #888;
+      }
     }
   }
 }
+
+

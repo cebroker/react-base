@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { fetchPosts } from '../actions';
 import { Grid, Row, Col } from 'react-bootstrap';
-import './HelloApi.scss';
+import styles from './HelloApi.scss';
 
 class HelloApi extends Component {
   componentWillMount() {
@@ -12,8 +12,8 @@ class HelloApi extends Component {
   renderPosts() {
     return this.props.posts.slice(0, 10).map((item) => {
       return (
-        <li key={item.id}>
-          <span className="HelloApi-list-item-title">{`POST #${item.id}`}</span>
+        <li key={item.id} className={styles.item}>
+          <span className={styles.title}>{`POST #${item.id}`}</span>
           {item.title}
         </li>
       );
@@ -22,7 +22,7 @@ class HelloApi extends Component {
 
   render() {
     return (
-      <Grid className="HelloApi">
+      <Grid className={styles.container}>
         <Row>
           <Col sm={8} smOffset={2}>
             <h3>Hello Redux</h3>
@@ -32,7 +32,7 @@ class HelloApi extends Component {
               and <code>src/containers/</code>
             </p>
             <hr />
-            <ul className="HelloApi-list list-group">
+            <ul className={styles.list + " list-group"}>
               {this.renderPosts()}
             </ul>
             <hr />

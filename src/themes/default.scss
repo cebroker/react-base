@@ -16,13 +16,14 @@ $border-radius-base: 3px;
 @import "~bootstrap-sass/assets/stylesheets/bootstrap/variables";
 @import "~bootstrap-sass/assets/stylesheets/bootstrap/mixins";
 
-.btn {
+:global(.btn) {
   border-radius: $btn-border-radius-base;
 }
 
-.btn-primary {
+:global(.btn-primary) {
   @include button-variant($btn-primary-color, $btn-primary-bg, $btn-primary-border);
 }
+
 
 
 

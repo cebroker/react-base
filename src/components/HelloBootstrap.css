@@ -1,7 +1,9 @@
-.HelloBootstrap {
+.container {
   text-align: left;
 }
 
-.HelloBootstrap-intro {
+.intro {
   margin-bottom: 30px
 }
+
+
