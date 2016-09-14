@@ -3,7 +3,10 @@
 # dependencies
 node_modules
 
-# outup directory
+# testing
+coverage
+
+# production
 build
 
 # misc
